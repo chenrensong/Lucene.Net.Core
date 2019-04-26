@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SS.Lucene", "SS.Lucene.csproj", "{7FDC44A8-2CAC-47F2-82E5-2259375D6579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FDC44A8-2CAC-47F2-82E5-2259375D6579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDC44A8-2CAC-47F2-82E5-2259375D6579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDC44A8-2CAC-47F2-82E5-2259375D6579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDC44A8-2CAC-47F2-82E5-2259375D6579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A52902D-F218-4E60-9733-4BFA68AE8859}
+	EndGlobalSection
+EndGlobal

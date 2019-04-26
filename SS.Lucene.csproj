@@ -1,0 +1,611 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>3.0.3</VersionPrefix>
+    <Version>3.0.3</Version>
+    <Authors>chenrensong</Authors>
+    <Description>.net standard 2.0 版本 Lucene.Net 3.0.3</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SS.Lucene</RootNamespace>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Analysis\Standard\READ_BEFORE_REGENERATING.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Analysis\Standard\READ_BEFORE_REGENERATING.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Analysis\Analyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\CharTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\ISOLatin1AccentFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\KeywordAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\KeywordTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\LengthFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\LetterTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\LowerCaseFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\LowerCaseTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\PerFieldAnalyzerWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\PorterStemFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\PorterStemmer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\SimpleAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\Standard\StandardAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\Standard\StandardFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\Standard\StandardTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\StopAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\StopFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\Token.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\TokenFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\Tokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\TokenStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\WhitespaceAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\WhitespaceTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis\WordlistLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\AbstractField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\DateField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\DateTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\Document.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\Field.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\Fieldable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\FieldSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\FieldSelectorResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\LoadFirstFieldSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\MapFieldSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\NumberTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Document\SetBasedFieldSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\CompoundFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\CompoundFileWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FieldInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FieldInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FieldReaderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FieldsReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FieldsWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\FilterIndexReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\IndexFileDeleter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\IndexFileNameFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\IndexFileNames.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\IndexReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\IndexWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\MultipleTermPositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\MultiReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\ParallelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentMergeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentMergeQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentMerger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentTermDocs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentTermEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentTermPositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentTermPositionVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\SegmentTermVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\Term.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermDocs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermFreqVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermInfosReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermInfosWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermPositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermPositionVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermVectorOffsetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermVectorsReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Index\TermVectorsWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LucenePackage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\CharStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\FastCharStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\MultiFieldQueryParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\ParseException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\QueryParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\QueryParserConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\QueryParserTokenManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\Token.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QueryParser\TokenMgrError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\BooleanClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\BooleanQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\BooleanScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\BooleanScorer2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\CachingWrapperFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ComplexExplanation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ConjunctionScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ConstantScoreQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\DefaultSimilarity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\DisjunctionMaxQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\DisjunctionMaxScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\DisjunctionSumScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ExactPhraseScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Explanation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FieldCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FieldCacheImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FieldDoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FieldDocSortedHitQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Filter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FilteredQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FilteredTermEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FuzzyQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\FuzzyTermEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\HitQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\IndexSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\MatchAllDocsQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\MultiPhraseQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\MultiSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\MultiTermQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ParallelMultiSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PhrasePositions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PhraseQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PhraseQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PhraseScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PrefixFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\PrefixQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Query.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\QueryTermVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ReqExclScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ReqOptSumScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\ScoreDoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Scorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Searchable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Searcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Similarity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\SimilarityDelegator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\SloppyPhraseScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Sort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\SortField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\NearSpansOrdered.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\NearSpansUnordered.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanFirstQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanNearQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanNotQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanOrQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\Spans.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanTermQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Spans\SpanWeight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\TermQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\TermScorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\TopDocs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\TopFieldDocs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\Weight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\WildcardQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Search\WildcardTermEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\AlreadyClosedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\BufferedIndexInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\BufferedIndexOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\CheckSumIndexInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\CheckSumIndexOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\Directory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\FileSwitchDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\FSDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\FSLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\IndexInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\IndexOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\Lock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\LockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\LockObtainFailedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\LockReleaseFailedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\LockStressTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\LockVerifyServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\MMapDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\NativeFSLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\NIOFSDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\NoLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\NoSuchDirectoryException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\RAMDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\RAMFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\RAMInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\RAMOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\SimpleFSDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\SimpleFSLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\SingleInstanceLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Store\VerifyingLockFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Support\IChecksum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\BitVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\PriorityQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\ScorerDocQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\SmallFloat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\StringHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Util\ToStringUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
